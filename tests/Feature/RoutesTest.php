@@ -118,7 +118,6 @@ class RoutesTest extends TestCase
         ];
 
         $response = $this->postJson('/api/v1/books', $parameter);
-        // $response->dump();
         $response->assertStatus(201)->assertJson($responseData);
     }
 
